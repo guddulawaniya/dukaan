@@ -5,21 +5,22 @@
       <map>
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/drawable/account.xml" value="0.1835" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_enter_email_id.xml" value="0.24635416666666668" />
-        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_enter_password.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_login.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_login_view_acivity.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_enter_password.xml" value="0.2" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_login.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_login_view_acivity.xml" value="0.264" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_verify_otp.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/activity_verify_otp.xml" value="0.2" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_account.xml" value="0.25" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_dashboard.xml" value="0.12158054711246201" />
-        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_home.xml" value="0.144" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_manage.xml" value="0.25" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_navigation_account.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_navigation_manage.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_navigation_order.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/fragment_navigation_product.xml" value="0.1933876811594203" />
-        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/layout/sliderimage.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Dukaan/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

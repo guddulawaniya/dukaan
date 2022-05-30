@@ -40,6 +40,7 @@ public class Enter_email_id extends AppCompatActivity {
                 {
                     Intent intent = new Intent(Enter_email_id.this,Enter_password.class);
                     startActivity(intent);
+                    finish();
                 }
                 else
                 {
