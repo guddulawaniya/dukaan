@@ -3,12 +3,16 @@ package com.example.dukaan;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.dukaan.databinding.ActivityLoginViewAcivityBinding;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Login_view_acivity extends AppCompatActivity {
 
@@ -24,6 +28,15 @@ public class Login_view_acivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(binding.getRoot());
+
+        List<Integer> imagelist = new ArrayList<>();
+        imagelist.add(R.drawable.img1);
+        imagelist.add(R.drawable.img2);
+        imagelist.add(R.drawable.img3);
+        ViewPager2 viewPager2 = findViewById(R.id.viewpager);
+
+//        ImageAdapter imageAdapter = new ImageAdapter(imagelist);
+//        viewPager2.setAdapter(imageAdapter);
 
 //        ViewPager mViewPager = (ViewPager) findViewById(R.id.viewpager);
 //        RecyclerView.Adapter adapterView = new RecyclerView.Adapter(Login_view_acivity.this,images);

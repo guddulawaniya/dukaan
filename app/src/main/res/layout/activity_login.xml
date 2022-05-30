@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:ems="10"
-            android:hint="Mobile Number"
+            android:hint="Enter 10 digit mobile number"
             android:inputType="phone"
             android:maxLength="10"
             android:textColor="#3A3939"
