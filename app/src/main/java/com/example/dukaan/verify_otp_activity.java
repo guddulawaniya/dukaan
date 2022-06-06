@@ -23,15 +23,18 @@ public class verify_otp_activity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         Intent intent = getIntent();
-        String mNumber = intent.getStringExtra("mobilenumber");
-
+        String mnumber = intent.getStringExtra("mobilenumber");
+        binding.setnumber.setText("Please enter  the 6-digit code sent to you at +91-" + mnumber);
 
         binding.nextstepotp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!binding.num1.getText().toString().trim().isEmpty() && !binding.num2.getText().toString().trim().isEmpty() &&
-                        !binding.num3.getText().toString().trim().isEmpty()  && !binding.num4.getText().toString().trim().isEmpty() &&
-                        !binding.num5.getText().toString().trim().isEmpty() && !binding.num6.getText().toString().trim().isEmpty() )
+                if((binding.num1.getText().toString().trim().length()==1) &&
+                        (binding.num2.getText().toString().trim().length()==1) &&
+                        (binding.num3.getText().toString().trim().length()==1)  &&
+                        (binding.num4.getText().toString().trim().length()==1) &&
+                        (binding.num5.getText().toString().trim().length()==1) &&
+                        (binding.num6.getText().toString().trim().length()==1))
                 {
                     Toast.makeText(verify_otp_activity.this, "OTP Verify ", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(verify_otp_activity.this,MainActivity.class);
@@ -47,7 +50,7 @@ public class verify_otp_activity extends AppCompatActivity {
             }
         });
 
-        binding.setnumber.setText("Please enter  the 6-digit code sent to you at +91-"+mNumber);
+
         binding.backverify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,15 +59,6 @@ public class verify_otp_activity extends AppCompatActivity {
                 finish();
             }
         });
-        binding.nextstepotp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(verify_otp_activity.this,MainActivity.class);
-                startActivity(intent1);
-                finish();
-            }
-        });
-
 
         moveotpnumber();
     }
