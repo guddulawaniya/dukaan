@@ -10,17 +10,21 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.dukaan.databinding.ActivityLoginViewAcivityBinding;
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Login_view_acivity extends AppCompatActivity {
 
-    RecyclerView.Adapter pmAdapter;
     ActivityLoginViewAcivityBinding binding;
-    ViewPager viewpager;
 
-    int[] images = {R.drawable.img1,R.drawable.img2,R.drawable.img3};
+    SliderView sliderView;
+    int[] images = {R.drawable.img1,
+            R.drawable.img2,
+            R.drawable.img3,};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +33,14 @@ public class Login_view_acivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(binding.getRoot());
 
-        List<Integer> imagelist = new ArrayList<>();
-        imagelist.add(R.drawable.img1);
-        imagelist.add(R.drawable.img2);
-        imagelist.add(R.drawable.img3);
+        sliderView = findViewById(R.id.image_slider);
 
-//        ImageAdapter imageAdapter = new ImageAdapter(imagelist);
-//        viewPager2.setAdapter(imageAdapter);
+        SliderAdapter sliderAdapter = new SliderAdapter(images);
 
-//        ViewPager mViewPager = (ViewPager) findViewById(R.id.viewpager);
-//        RecyclerView.Adapter adapterView = new RecyclerView.Adapter(Login_view_acivity.this,images);
-//        mViewPager.setAdapter(adapterView);
-
-//        viewpager = (ViewPager)findViewById(R.id.viewpager);
-//        pmAdapter = new Adapter(Login_view_acivity.this, images);
-//        viewpager.setAdapter(pmAdapter);
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
 
         binding.startbutton.setOnClickListener(new View.OnClickListener() {
             @Override

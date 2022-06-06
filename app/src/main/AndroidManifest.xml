@@ -24,24 +24,31 @@
             android:exported="false" />
         <activity
             android:name=".Login_view_acivity"
-            android:exported="false" />
+            android:exported="true" >
+
+
+
+        </activity>
         <activity
             android:name=".verify_otp_activity"
             android:exported="false" />
         <activity
             android:name=".splash_activity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
 
         </activity>
     </application>

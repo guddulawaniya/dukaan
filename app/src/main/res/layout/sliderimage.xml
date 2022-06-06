@@ -6,8 +6,9 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/sliderimageview"
+        android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
 </LinearLayout>
